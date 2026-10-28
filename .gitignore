@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+*/.env
+*/*/.env
+!.env.example
+!*/.env.example
+
+# Runtime uploads (driver licenses, vehicle photos)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Build and cache outputs
+dist/
+build/
+.vite/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
